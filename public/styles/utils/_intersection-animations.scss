@@ -1,0 +1,5 @@
+@use "./keyframes" as *;
+
+.shrink-in {
+  animation: shrinkIn 1s ease 0s 1 normal forwards;
+}

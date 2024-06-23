@@ -1,0 +1,31 @@
+/*@font-face {
+    font-family: 'Anton';
+    src: local('Anton'), url("../fonts/AquilineTwo.ttf") format('truetype');
+}*/
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto-Light.ttf"),
+    url("./fonts/Roboto-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "StartrekenterprisefutureItalic";
+  src: local("StartrekenterprisefutureItalic.ttf"),
+    url("./fonts/StartrekenterprisefutureItalic.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "game_over";
+  src: local("game_over.ttf"),
+    url("./fonts/game_over.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ARCADECLASSIC";
+  src: local("ARCADECLASSIC.ttf"),
+    url("./fonts/ARCADECLASSIC.ttf") format("truetype");
+  font-display: swap;
+}
+
+
+

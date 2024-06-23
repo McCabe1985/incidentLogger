@@ -1,0 +1,8 @@
+@use "../utils/" as *;
+
+.app-container {
+  @include flexContainer(column);
+  width: 100%;
+  min-height: 100vh;
+}
+

@@ -1,0 +1,12 @@
+@use "../utils/" as *;
+
+
+.nav-container {
+    @include flexContainer(row);
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    a {
+        cursor: pointer;
+    }
+}
