@@ -1,0 +1,10 @@
+<%- include("partials/head") %>
+<h1>Years</h1>
+<ul>
+  <% years.forEach(year => { %>
+    <li>
+      <a href="/data/<%= year %>"><%= year %></a>
+    </li>
+  <% }); %>
+</ul>
+<%- include("partials/footer") %>

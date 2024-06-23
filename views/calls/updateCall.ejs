@@ -1,0 +1,14 @@
+<%- include("../partials/head") %>
+
+<h1>Update Call Log - <%= day %> - Week <%= week %> - Year <%= year %></h1>
+
+<form action="/calls/update-call/<%= year %>/<%= week %>/<%= day %>/<%= filename %>" method="POST">
+    <label for="newComment">New Comment:</label>
+    <textarea id="newComment" name="newComment" rows="4" cols="50" required></textarea>
+    <br>
+    <button type="submit">Add Comment</button>
+</form>
+
+<a href="/">Back</a>
+
+<%- include("../partials/footer") %>

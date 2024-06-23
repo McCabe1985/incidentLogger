@@ -1,0 +1,24 @@
+<%- include("../partials/head") %>
+
+<h1>Day <%= day %> - Week <%= week %> - Year <%= year %></h1>
+
+<h2>Daily Checks</h2>
+<ul>
+  <% dailyChecks.forEach(file => { %>
+    <li><a href="/data/<%= year %>/<%= week %>/<%= day %>/daily_checks/<%= file %>"><%= file %></a></li>
+  <% }); %>
+</ul>
+
+<h2>Work Logs</h2>
+<ul>
+  <% workLogs.forEach(file => { %>
+    <li>
+      <a href="/data/<%= year %>/<%= week %>/<%= day %>/work_logs/<%= file %>"><%= file %></a>
+      <a href="/calls/update-call/<%= year %>/<%= week %>/<%= day %>/<%= file %>">Update</a>
+    </li>
+  <% }); %>
+</ul>
+
+<a href="/<%= year %>/<%= week %>">Back to Week <%= week %></a>
+
+<%- include("../partials/footer") %>

@@ -1,0 +1,13 @@
+<%- include("../partials/head") %>
+
+<h1>Work Logs - <%= day %> - Week <%= week %> - Year <%= year %></h1>
+
+<ul>
+  <% files.forEach(file => { %>
+    <li><a href="/data/<%= year %>/<%= week %>/<%= day %>/work_logs/<%= file %>"><%= file %></a></li>
+  <% }); %>
+</ul>
+
+<a href="/<%= year %>/<%= week %>/<%= day %>">Back</a>
+
+<%- include("../partials/footer") %>

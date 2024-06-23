@@ -1,0 +1,10 @@
+<%- include("../partials/head") %>
+<h1>Week <%= week %> - <%= year %></h1>
+<ul>
+  <% days.forEach(day => { %>
+    <li>
+      <a href="/data/<%= year %>/<%= week %>/<%= day %>"><%= day %></a>
+    </li>
+  <% }); %>
+</ul>
+<%- include("../partials/footer") %>
