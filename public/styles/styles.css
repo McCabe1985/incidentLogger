@@ -418,6 +418,84 @@ body,
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
+  background-color: black;
+  color: white;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2vmin;
+  text-align: left;
+  padding: 2rem;
+}
+
+h1 {
+  color: white;
+  font-family: "StartrekenterprisefutureItalic", sans-serif;
+  font-size: 10vh;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: white;
+  font-family: "ARCADECLASSIC", sans-serif;
+  font-size: 5vh;
+  text-transform: uppercase;
+  margin-bottom: 5vh;
+}
+
+.main-content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+.main-content-container a {
+  cursor: pointer;
+  color: yellowgreen;
+  font-size: 4.5vmin;
+  font-family: "ARCADECLASSIC", sans-serif;
+  transition: all ease-in-out 0.5s;
+}
+.main-content-container a:active, .main-content-container a:hover, .main-content-container afocus {
+  color: white;
+  text-decoration: underline;
+}
+.main-content-container ul {
+  list-style: none;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main-content-container ul li {
+  margin: 1rem 0;
+}
+
+.footer-container {
+  margin-top: auto;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 45ch;
+  padding: 0.5em;
+}
+
+button {
+  border: 1px solid yellowgreen;
+  color: yellowgreen;
+  padding: 1em 1.5em;
+  transition: all ease-in-out 0.5s;
+}
+button:active, button:hover, buttonfocus {
+  color: white;
+  border: 1px solid white;
 }
 
 .nav-container {
@@ -426,8 +504,19 @@ body,
   flex-direction: row;
   width: 100%;
   height: 10vh;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .nav-container a {
   cursor: pointer;
+  color: yellowgreen;
+  font-size: 4.5vmin;
+  font-family: "ARCADECLASSIC", sans-serif;
+  transition: all ease-in-out 0.5s;
+}
+.nav-container a:active, .nav-container a:hover, .nav-container afocus {
+  color: white;
+  text-decoration: underline;
+}
+.nav-container .main-link {
+  font-size: 8vmin;
 }/*# sourceMappingURL=styles.css.map */

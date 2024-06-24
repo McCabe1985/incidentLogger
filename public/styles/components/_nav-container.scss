@@ -5,8 +5,13 @@
     @include flexContainer(row);
     width: 100%;
     height: 10vh;
-    justify-content: center;
+    justify-content: space-evenly;
     a {
-        cursor: pointer;
+       @include primaryLink(4.5vmin)
     }
+    .main-link {
+        font-size: 8vmin;
+    }
+   
+    
 }

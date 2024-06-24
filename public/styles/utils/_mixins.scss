@@ -16,11 +16,10 @@ fonts
   text-transform: uppercase;
 }
 
-@mixin primaryFont($color, $size, $weight) {
+@mixin primaryFont($color, $size) {
   color: $color;
-  font-family: "Roboto-Light", Tahoma, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: $size;
-  font-weight: $weight;
   text-align: left;
 }
 
@@ -67,18 +66,17 @@ buttons
 /*
 Links
 */
-@mixin primaryLink($color, $size) {
-  text-decoration: none;
-  @include subHeading($color, $size);
-  transition: all 0.3s ease-in-out;
-  &:hover,
-  :focus {
-    cursor: pointer;
-    opacity: 0.5;
+@mixin primaryLink($size) {
+  cursor: pointer;
+  color: yellowgreen;
+  font-size: $size;
+  font-family: $subHeading-font;
+  transition: all ease-in-out 0.5s;
+  &:active, &:hover, &focus {
+      color: white;
+      text-decoration: underline;
   }
-  &:active {
-    text-decoration: underline;
-  }
+
 }
 
 /*

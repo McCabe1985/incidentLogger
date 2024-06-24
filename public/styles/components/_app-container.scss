@@ -4,5 +4,59 @@
   @include flexContainer(column);
   width: 100%;
   min-height: 100vh;
+  background-color: black;
+  color: white;
+  @include primaryFont(white, 2vmin);
+  padding: 2rem;
 }
 
+h1 {
+  @include headingFont(white, 10vh);
+}
+h2 {
+  @include subHeading(white, 5vh);
+  margin-bottom: 5vh;
+}
+
+.main-content-container{
+  @include flexContainer(column);
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    @include primaryLink(4.5vmin)
+ }
+ ul {
+  list-style: none;
+  width: 70%;
+  @include flexContainer(row);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  li {
+    margin: 1rem 0;
+  }
+ }
+}
+
+.footer-container {
+  margin-top: auto;
+}
+
+form {
+  @include flexContainer(column);
+  width: 45ch;
+  padding: 0.5em;
+}
+
+button {
+  border: 1px solid yellowgreen;
+  color: yellowgreen;
+  padding: 1em 1.5em;
+  transition: all ease-in-out 0.5s;
+  &:active, &:hover, &focus {
+    color: white;
+    border: 1px solid white;
+}
+}

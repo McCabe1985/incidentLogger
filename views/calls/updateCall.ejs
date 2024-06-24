@@ -1,6 +1,6 @@
 <%- include("../partials/head") %>
 
-<h1>Update Call Log - <%= day %> - Week <%= week %> - Year <%= year %></h1>
+<h2>Update Call Log - <%= day %> - Week <%= week %> - Year <%= year %></h2>
 
 <form action="/calls/update-call/<%= year %>/<%= week %>/<%= day %>/<%= filename %>" method="POST">
     <label for="newComment">New Comment:</label>
